@@ -17,9 +17,8 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + "/bmi.html");
 });
 
-let resultList = [];
-
 app.post('/', (req, res) => {
+    let resultList = [];
     let age = Number(req.body.age);
     let height = Number(req.body.height); 
     let weight = Number(req.body.weight);
